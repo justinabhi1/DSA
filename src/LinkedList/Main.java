@@ -8,8 +8,11 @@ public class Main {
         linkedList.append(9);
         linkedList.append(11);
         linkedList.append(12);
-        linkedList.removeFirst();
-        linkedList.set(1,14);
         linkedList.printList();
+
+        System.out.println("-------- Doubly Linked List --------");
+        DoublyLinkedList dll = new DoublyLinkedList(1);
+        dll.printList();
+        dll.getHead();
         }
     }
