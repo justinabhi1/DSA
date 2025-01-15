@@ -14,5 +14,7 @@ public class Main {
         DoublyLinkedList dll = new DoublyLinkedList(1);
         dll.printList();
         dll.getHead();
+        dll.append(2);
+        dll.printList();
         }
     }

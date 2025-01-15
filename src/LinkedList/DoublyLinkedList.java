@@ -24,10 +24,10 @@ public class DoublyLinkedList {
     }
 
     public void printList() {
-      Node temp = head;
-      while (temp != null) {
-          System.out.println(temp.value);
-          temp = temp.next;
+        Node temp = head;
+        while (temp != null) {
+            System.out.println(temp.value);
+            temp = temp.next;
         }
     }
 
@@ -41,5 +41,17 @@ public class DoublyLinkedList {
 
     public void getLength() {
         System.out.println("Length -> " + length);
+    }
+
+    public void append(int value) {
+        Node newNode = new Node(value);
+        if (length == 0) {
+            head = tail = newNode;
+        } else {
+            tail.next = newNode;
+            newNode.prev = tail;
+            tail = newNode;
+        }
+        length++;
     }
 }
