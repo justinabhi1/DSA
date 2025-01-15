@@ -16,5 +16,8 @@ public class Main {
         dll.getHead();
         dll.append(2);
         dll.printList();
+        dll.removeLast();
+        dll.prepend(2);
+        dll.printList();
         }
     }
